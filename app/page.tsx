@@ -7,12 +7,12 @@ import { motion, Variants } from "framer-motion";
 const categories = [
   {
     icon: <Briefcase size={28} />,
-    title: "Men’s Collection",
+    title: "Men's Collection",
     desc: "From sharp office oxfords to weekend-ready sneakers.",
   },
   {
     icon: <Sparkles size={28} />,
-    title: "Women’s Collection",
+    title: "Women's Collection",
     desc: "Elegant heels, versatile boots, and everyday slip-ons.",
   },
   {
@@ -23,21 +23,21 @@ const categories = [
 ];
 
 const whyChooseUs = [
-  { title: "Premium Sourcing", desc: "We source only the finest, most durable materials to ensure your shoes last season after season." },
+  { title: "Premium Sourcing", desc: "We source only the finest, most durable materials to ensure your products last season after season." },
   { title: "Built-In Comfort", desc: "With built-in arch support, breathable linings, and shock-absorbing soles in every pair." },
   { title: "Custom-Made Feel", desc: "We guarantee a fit that feels custom-made from the very first step." },
 ];
 
 const process = [
-  { step: "1", title: "Ergonomic Design", desc: "Every shoe begins with studying the natural movement of the human foot." },
-  { step: "2", title: "Premium Sourcing", desc: "We select high-quality leathers, breathable knits, and durable rubber." },
+  { step: "1", title: "Ergonomic Design", desc: "Every design begins with studying the natural movement of the human body." },
+  { step: "2", title: "Premium Sourcing", desc: "We select high-quality materials, breathable fabrics, and durable components." },
   { step: "3", title: "Expert Craftsmanship", desc: "Assembled with precision to ensure longevity and superior comfort." },
 ];
 
 const fadeInUp: Variants = {
   initial: { opacity: 0, y: 30 },
-  whileInView: { 
-    opacity: 1, 
+  whileInView: {
+    opacity: 1,
     y: 0,
     transition: { duration: 0.6, ease: "easeOut" }
   }
@@ -45,7 +45,7 @@ const fadeInUp: Variants = {
 
 const staggerContainer: Variants = {
   initial: { opacity: 0 },
-  whileInView: { 
+  whileInView: {
     opacity: 1,
     transition: { staggerChildren: 0.2 }
   }
@@ -53,8 +53,8 @@ const staggerContainer: Variants = {
 
 const staggerItem: Variants = {
   initial: { opacity: 0, y: 20 },
-  whileInView: { 
-    opacity: 1, 
+  whileInView: {
+    opacity: 1,
     y: 0,
     transition: { duration: 0.5, ease: "easeOut" }
   }
@@ -78,7 +78,7 @@ export default function HomePage() {
             Find Your Balance. Step into Comfort.
           </h1>
           <p className="text-brand-gray max-w-2xl text-lg mb-10 leading-relaxed">
-            Discover Walkzen Footwear—where premium craftsmanship meets ultimate, all-day comfort. Thoughtfully designed shoes for men and women who refuse to compromise on style or well-being.
+            Discover Progressive Tee—where premium craftsmanship meets ultimate, all-day comfort. Thoughtfully designed for men and women who refuse to compromise on style or well-being.
           </p>
           <Link
             href="/shop"
@@ -90,7 +90,7 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT SNIPPET */}
-      <motion.section 
+      <motion.section
         initial="initial"
         whileInView="whileInView"
         viewport={{ once: true, margin: "-50px" }}
@@ -98,17 +98,17 @@ export default function HomePage() {
         className="max-w-4xl mx-auto px-6 py-24 text-center"
       >
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          More Than Just a Shoe.
+          More Than Just a Product.
         </h2>
         <p className="text-brand-gray text-lg leading-relaxed">
-          We believe that a good day starts from the ground up. At Walkzen Footwear, we design shoes that move naturally with your life. By combining modern aesthetics with ergonomic engineering, we create footwear that feels like a natural extension of your body.
+          We believe that a great day starts from the ground up. At Progressive Tee, we design products that move naturally with your life. By combining modern aesthetics with ergonomic engineering, we create collections that feel like a natural extension of who you are.
         </p>
       </motion.section>
 
       {/* CATEGORIES */}
       <section className="bg-brand-navy/30 py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <motion.div 
+          <motion.div
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true, margin: "-50px" }}
@@ -121,7 +121,7 @@ export default function HomePage() {
               Explore our diverse ranges tailored to fit your lifestyle.
             </p>
           </motion.div>
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
@@ -147,16 +147,16 @@ export default function HomePage() {
 
       {/* WHY CHOOSE US */}
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <motion.h2 
+        <motion.h2
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true, margin: "-50px" }}
           variants={fadeInUp}
           className="font-display text-4xl font-bold text-center mb-16"
         >
-          The <span className="text-brand-teal">Walkzen Promise</span>
+          The <span className="text-brand-teal">Progressive Tee Promise</span>
         </motion.h2>
-        <motion.div 
+        <motion.div
           variants={staggerContainer}
           initial="initial"
           whileInView="whileInView"
@@ -175,7 +175,7 @@ export default function HomePage() {
       {/* PROCESS */}
       <section className="bg-brand-navy/30 py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <motion.h2 
+          <motion.h2
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true, margin: "-50px" }}
@@ -184,7 +184,7 @@ export default function HomePage() {
           >
             Designed with Purpose
           </motion.h2>
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
@@ -207,7 +207,7 @@ export default function HomePage() {
       </section>
 
       {/* FINAL CTA */}
-      <motion.section 
+      <motion.section
         initial="initial"
         whileInView="whileInView"
         viewport={{ once: true, margin: "-50px" }}
@@ -218,7 +218,7 @@ export default function HomePage() {
           Ready to Walk on Clouds?
         </h2>
         <p className="text-brand-gray max-w-xl mx-auto mb-10 text-lg">
-          Join the Walkzen community today. Sign up for our newsletter to receive early access to new drops and 10% off your first purchase.
+          Join the Progressive Tee community today. Sign up for our newsletter to receive early access to new drops and 10% off your first purchase.
         </p>
         <Link
           href="#"

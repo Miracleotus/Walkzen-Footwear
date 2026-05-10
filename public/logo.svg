@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- T-shirt silhouette -->
+  <path d="M 12,20 L 0,32 L 0,42 L 20,46 L 20,88 L 80,88 L 80,46 L 100,42 L 100,32 L 88,20 L 68,27 C 62,12 38,12 32,27 Z"
+        fill="#C9A961"/>
+  <!-- PT monogram inside body -->
+  <text x="50" y="72" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" font-weight="bold"
+        fill="#0F0E0C" letter-spacing="-0.5">PT</text>
+</svg>

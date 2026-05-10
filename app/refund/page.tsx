@@ -16,9 +16,9 @@ export default function RefundPage() {
         </h1>
 
         <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">30-Day Comfort Guarantee (Returns & Exchanges)</h2>
+          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">30-Day Comfort Guarantee (Returns &amp; Exchanges)</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            We want you to be entirely satisfied with your Walkzen shoes. If the fit isn`t perfect, we accept returns and exchanges within 30 days of the delivery date. To be eligible for a full refund, shoes must be unworn (except for trying them on indoors on a clean surface), in their original condition, and returned in the original Walkzen shoebox.
+            We want you to be entirely satisfied with your Progressive Tee purchase. If the fit isn&apos;t perfect, we accept returns and exchanges within 30 days of the delivery date. To be eligible for a full refund, items must be unworn (except for trying them on indoors on a clean surface), in their original condition, and returned in the original Progressive Tee packaging.
           </p>
         </section>
 

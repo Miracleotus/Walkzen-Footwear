@@ -1,9 +1,12 @@
-import React from "react";
+"use client";
+
 import { products } from "@/lib/products";
-import { formatPrice } from "@/lib/utils";
+import { useCurrency } from "@/context/CurrencyContext";
 import Link from "next/link";
 
 export default function ShopPage() {
+  const { formatPrice } = useCurrency();
+
   return (
     <main className="max-w-7xl mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold mb-8">Shop Our Collection</h1>
