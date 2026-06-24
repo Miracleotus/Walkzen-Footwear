@@ -13,7 +13,7 @@ export default function CartPage() {
 
   if (cart.length === 0) {
     return (
-      <main className="max-w-3xl mx-auto px-4 py-20 text-center">
+      <main className="max-w-3xl mx-auto px-4 py-20 pt-32 text-center">
         <h1 className="text-4xl font-bold mb-4">Your Cart</h1>
         <p className="text-white/50 mb-8">You haven&apos;t added anything yet.</p>
         <Link
@@ -27,7 +27,7 @@ export default function CartPage() {
   }
 
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12">
+    <main className="max-w-3xl mx-auto px-4 py-12 pt-32">
       <h1 className="text-4xl font-bold mb-8">Your Cart</h1>
 
       <div className="flex flex-col gap-4">

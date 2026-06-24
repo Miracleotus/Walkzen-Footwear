@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { products } from "@/lib/products";
 import { useCurrency } from "@/context/CurrencyContext";
 import { useCart } from "@/context/CartContext";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ShoppingCart } from "lucide-react";
 
@@ -16,7 +17,7 @@ export default function ProductPage() {
 
   if (!product) {
     return (
-      <main className="max-w-4xl mx-auto px-4 py-12">
+      <main className="max-w-4xl mx-auto px-4 py-12 pt-32">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Product Not Found</h1>
           <p className="text-white/60 mb-8">The product you&apos;re looking for doesn&apos;t exist.</p>
@@ -32,7 +33,7 @@ export default function ProductPage() {
   }
 
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <main className="max-w-4xl mx-auto px-4 py-12 pt-32">
       <Link
         href="/shop"
         className="inline-flex items-center gap-2 text-white/60 hover:text-white mb-8 transition"
@@ -42,17 +43,17 @@ export default function ProductPage() {
       </Link>
 
       <div className="grid md:grid-cols-2 gap-12">
-        {/* Product Image Placeholder */}
-        <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center">
-          <div className="text-white/40 text-center">
-            <div className="w-24 h-24 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <ShoppingCart size={32} />
-            </div>
-            <p>Product Image</p>
-          </div>
+        <div className="relative aspect-square rounded-2xl overflow-hidden">
+          <Image
+            src={product.image}
+            alt={product.name}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
+          />
         </div>
 
-        {/* Product Details */}
         <div className="space-y-6">
           <div>
             <span className="text-xs text-brand-teal uppercase tracking-widest">{product.category}</span>

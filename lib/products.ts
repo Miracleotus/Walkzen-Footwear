@@ -5,6 +5,7 @@ export type Product = {
   shortDesc: string;
   fullDesc: string;
   price: number;
+  image: string;
   category: "Men's Dress" | "Women's Casual" | "Men's Athletic" | "Women's Boots" | "Men's Boots" | "Women's Sandals" | "Men's Casual" | "Women's Dress" | "Men's Outdoor" | "Women's Athletic" | "Men's Sandals";
 };
 
@@ -16,6 +17,7 @@ export const products: Product[] = [
     shortDesc: "Timeless black leather dress shoe.",
     fullDesc: "Step into the boardroom with confidence. Crafted from premium full-grain leather, this Oxford features a cushioned insole and a durable rubber outsole for all-day comfort without compromising on a sharp, professional aesthetic.",
     price: 120.00,
+    image: "/products/product-1.jpg",
     category: "Men's Dress",
   },
   {
@@ -25,6 +27,7 @@ export const products: Product[] = [
     shortDesc: "Slip-on everyday comfort loafer.",
     fullDesc: "The ultimate everyday shoe. Made from butter-soft suede with a flexible sole, this minimalist loafer molds to your foot for a custom fit. Perfect for the office or weekend errands.",
     price: 85.00,
+    image: "/products/product-2.jpg",
     category: "Women's Casual",
   },
   {
@@ -34,6 +37,7 @@ export const products: Product[] = [
     shortDesc: "Lightweight athletic running shoe.",
     fullDesc: "Experience weightless movement. Featuring a breathable mesh upper and our signature shock-absorbing EVA midsole, these sneakers are designed for long walks, light runs, and everything in between.",
     price: 95.00,
+    image: "/products/product-3.jpg",
     category: "Men's Athletic",
   },
   {
@@ -43,6 +47,7 @@ export const products: Product[] = [
     shortDesc: "Sleek black leather bootie.",
     fullDesc: "A wardrobe staple for any season. Features a low, stacked block heel for stability, an inner zipper for easy wear, and premium water-resistant leather. Transitions seamlessly from day to night.",
     price: 135.00,
+    image: "/products/product-4.jpg",
     category: "Women's Boots",
   },
   {
@@ -52,6 +57,7 @@ export const products: Product[] = [
     shortDesc: "Classic pull-on ankle boot.",
     fullDesc: "Effortlessly stylish and remarkably comfortable. This Chelsea boot features elastic side panels, a pull tab, and a cushioned footbed, all wrapped in luxurious, weather-treated suede.",
     price: 140.00,
+    image: "/products/product-5.jpg",
     category: "Men's Boots",
   },
   {
@@ -61,6 +67,7 @@ export const products: Product[] = [
     shortDesc: "Canvas casual walking shoe.",
     fullDesc: "Simple, breathable, and incredibly comfortable. These canvas slip-ons feature a padded collar and a memory foam insole, making them your go-to pair for busy days on your feet.",
     price: 60.00,
+    image: "/products/product-6.jpg",
     category: "Women's Casual",
   },
   {
@@ -70,6 +77,7 @@ export const products: Product[] = [
     shortDesc: "High-performance athletic shoe.",
     fullDesc: "Engineered for endurance. This runner offers targeted arch support, a deeply treaded outsole for grip, and a knit upper that keeps your feet cool during intense workouts.",
     price: 110.00,
+    image: "/products/product-7.jpg",
     category: "Men's Athletic",
   },
   {
@@ -79,6 +87,7 @@ export const products: Product[] = [
     shortDesc: "Elegant summer leather sandal.",
     fullDesc: "Minimalist design meets all-day support. Featuring soft leather straps that won't dig in and a gently contoured footbed to support your arches during warm-weather strolls.",
     price: 75.00,
+    image: "/products/product-8.jpg",
     category: "Women's Sandals",
   },
   {
@@ -88,6 +97,7 @@ export const products: Product[] = [
     shortDesc: "Premium black leather sneaker.",
     fullDesc: "The perfect hybrid of casual and dressed-up. This low-profile leather sneaker features tonal stitching and a contrasting white rubber sole for a clean, modern look.",
     price: 105.00,
+    image: "/products/product-9.jpg",
     category: "Men's Casual",
   },
   {
@@ -97,6 +107,7 @@ export const products: Product[] = [
     shortDesc: "Comfortable office-ready heel.",
     fullDesc: "Redefining the work heel. Designed with a wider toe box, targeted heel cushioning, and a sturdy 2-inch block heel so you can walk through your workday without the ache.",
     price: 95.00,
+    image: "/products/product-10.jpg",
     category: "Women's Dress",
   },
   {
@@ -106,6 +117,7 @@ export const products: Product[] = [
     shortDesc: "Rugged outdoor hiking shoe.",
     fullDesc: "Built for the adventurous spirit. Features a waterproof exterior, reinforced toe caps, and deep-lugged outsoles to provide superior traction on uneven terrain.",
     price: 130.00,
+    image: "/products/product-11.jpg",
     category: "Men's Outdoor",
   },
   {
@@ -115,6 +127,7 @@ export const products: Product[] = [
     shortDesc: "Trendy elevated casual shoe.",
     fullDesc: "Add a little height to your step without sacrificing comfort. These canvas sneakers feature a 1.5-inch platform sole and orthotic-friendly removable insoles.",
     price: 80.00,
+    image: "/products/product-12.jpg",
     category: "Women's Casual",
   },
   {
@@ -124,6 +137,7 @@ export const products: Product[] = [
     shortDesc: "Detailed wingtip leather shoe.",
     fullDesc: "A masterclass in craftsmanship. These wingtip brogues feature intricate perforations, a hand-polished finish, and a cork-cushioned footbed that molds to your stride over time.",
     price: 145.00,
+    image: "/products/product-13.jpg",
     category: "Men's Dress",
   },
   {
@@ -133,6 +147,7 @@ export const products: Product[] = [
     shortDesc: "Ultra-flexible stretch sneaker.",
     fullDesc: "Fits like a sock, supports like a sneaker. The engineered knit upper expands and contracts with your foot, while the ultra-light sole makes you feel like you're walking on air.",
     price: 90.00,
+    image: "/products/product-14.jpg",
     category: "Women's Athletic",
   },
   {
@@ -142,6 +157,7 @@ export const products: Product[] = [
     shortDesc: "Premium contoured summer slide.",
     fullDesc: "Relaxation for your feet. Whether you're by the pool or lounging at home, these slides offer a molded EVA footbed that supports your arches and cradles your heel.",
     price: 45.00,
+    image: "/products/product-15.jpg",
     category: "Men's Sandals",
   },
 ];

@@ -40,10 +40,10 @@ export default function ContactPage() {
             <div>
               <p className="text-sm text-brand-gray uppercase tracking-widest font-semibold mb-1">Phone</p>
               <a
-                href="tel:+2347063065362"
+                href="tel:09043963779"
                 className="text-white hover:text-brand-teal transition-colors"
               >
-                +2347063065362
+                09043963779
               </a>
             </div>
           </div>
